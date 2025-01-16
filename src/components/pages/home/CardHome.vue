@@ -10,7 +10,7 @@ import CardCourse from '@/components/layouts/partials/CardCourses.vue';
 
 const webDevelopment = [
     {
-        image: "@/assets/images/homepage/html.png",
+        image: "/images/homepage/html.png",
         title: "HTML CSS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -19,7 +19,7 @@ const webDevelopment = [
 
     },
     {
-        image: "@/assets/images/homepage/css.png",
+        image: "/images/homepage/css.png",
         title: "CSS ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -27,7 +27,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -35,7 +35,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -43,7 +43,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -51,7 +51,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -59,7 +59,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
