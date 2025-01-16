@@ -12,7 +12,7 @@ import CardCourse from '@/components/layouts/partials/CardCourses.vue';
 
 const webDevelopment = [
     {
-        image: "/src/assets/images/homepage/html.png",
+        image: "/images/homepage/html.png",
         title: "HTML CSS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -21,7 +21,7 @@ const webDevelopment = [
 
     },
     {
-        image: "/src/assets/images/homepage/css.png",
+        image: "/images/homepage/css.png",
         title: "CSS ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -29,7 +29,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -37,7 +37,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -45,7 +45,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -53,7 +53,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -61,7 +61,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/javascript.png",
+        image: "/images/homepage/javascript.png",
         title: "Javascript ",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -69,7 +69,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "/src/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",
@@ -80,7 +80,7 @@ const webDevelopment = [
 
 const softwareDevelopment = [
     {
-        image: "/src/assets/images/new-opening-course/c++.png",
+        image: "/images/new-opening-course/c++.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -88,7 +88,7 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/oop.png",
+        image: "/images/new-opening-course/oop.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -96,7 +96,7 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/c++.png",
+        image: "/images/new-opening-course/c++.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -104,14 +104,14 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/oop.png",
+        image: "/images/new-opening-course/oop.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
         startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
         price: "$60.00",
     }, {
-        image: "/src/assets/images/new-opening-course/c++.png",
+        image: "/images/new-opening-course/c++.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -119,7 +119,7 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/oop.png",
+        image: "/images/new-opening-course/oop.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -127,7 +127,7 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/c++.png",
+        image: "/images/new-opening-course/c++.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -135,7 +135,7 @@ const softwareDevelopment = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/oop.png",
+        image: "/images/new-opening-course/oop.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -146,7 +146,7 @@ const softwareDevelopment = [
 
 const appApplication = [
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -154,7 +154,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -162,7 +162,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -170,7 +170,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -178,7 +178,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -186,7 +186,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -194,7 +194,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -202,7 +202,7 @@ const appApplication = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/flutter-1.png",
+        image: "/images/new-opening-course/flutter-1.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -213,7 +213,7 @@ const appApplication = [
 
 const graphicDesign = [
     {
-        image: "/src/assets/images/new-opening-course/design.png",
+        image: "/images/new-opening-course/design.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -222,7 +222,7 @@ const graphicDesign = [
 
     },
     {
-        image: "/src/assets/images/new-opening-course/design.png",
+        image: "/images/new-opening-course/design.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -230,7 +230,7 @@ const graphicDesign = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/design.png",
+        image: "/images/new-opening-course/design.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",
@@ -238,7 +238,7 @@ const graphicDesign = [
         price: "$60.00",
     },
     {
-        image: "/src/assets/images/new-opening-course/design.png",
+        image: "/images/new-opening-course/design.png",
         title: "C++",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "១១:០០​-១២:២០ព្រឹក",

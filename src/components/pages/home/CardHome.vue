@@ -67,7 +67,7 @@ const webDevelopment = [
         price: "$70.00",
     },
     {
-        image: "@/assets/images/homepage/node.js.png",
+        image: "/images/homepage/node.js.png",
         title: "Node JS",
         schedule: "ច័ន្ទ-សុក្រ",
         time: "២:០០​-៣:២០ល្ងាច",

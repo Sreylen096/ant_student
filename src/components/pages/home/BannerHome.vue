@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
-                        <img src="/src/assets/images/homepage/herobanner-lina 1.png" alt="" class="mt-5 mt-md-0">
+                        <img src="/images/homepage/herobanner-lina 1.png" alt="" class="mt-5 mt-md-0">
                     </div>
                 </div>
             </div>

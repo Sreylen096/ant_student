@@ -32,11 +32,11 @@
                                 <img src="/src/assets/images/homepage/macro.png" alt="macro" class="img-fluid">
                             </div> -->
                         <div class="position-absolute top-0 end-0 responsive-position">
-                            <img src="/src/assets/images/homepage/macro.png" alt="macro" class="img-fluid">
+                            <img src="/images/homepage/macro.png" alt="macro" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
-                        <img src="/src/assets/images/homepage/discount.png" alt="discount" class="img-fluid py-4">
+                        <img src="/images/homepage/discount.png" alt="discount" class="img-fluid py-4">
                     </div>
                 </div>
 

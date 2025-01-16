@@ -21,21 +21,21 @@
 import SmallCard from './SmallCard.vue';
 const cards = [
     {
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "CSS3 ",
         creator: "សេង សំណាង",
         deadline: "Oct 15, 2024",
     },
     {
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "C++ OOP",
         creator: "សេង សំណាង",
         deadline: "Oct 15, 2024",
     },
     {
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "HTML",
         creator: "តូច សុវណ្ណចាន់សំណាង",

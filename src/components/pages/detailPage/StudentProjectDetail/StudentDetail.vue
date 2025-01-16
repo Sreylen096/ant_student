@@ -25,7 +25,7 @@
                     <div class="tab-pane fade show active" id="html-tab" role="tabpanel">
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <img src="/src/assets/images/student-project/assignment.png" alt="" class="img-fluid">
+                                <img src="/images/student-project/assignment.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-12 col-md-6 p-0 mt-4">
                                 <div class="pt-4 m-0">
@@ -110,7 +110,7 @@ import StudentCardCourse from '../../detailCourse/StudentCardCourse.vue';
 import StudentProfileGroup from './StudentProfileGroup.vue';
 
 const profile = {
-    avatarImage: '/src/assets/images/student-project/student-1.png',
+    avatarImage: '/images/student-project/student-1.png',
     name: 'សួ លីឡាយ',
     nameEnglish: 'Suo Lylay',
     id: '០០០០១',
@@ -120,7 +120,7 @@ const profile = {
 
 const groupProfile = [
     {
-        avatarImage: '/src/assets/images/student-project/student-2.png',
+        avatarImage: '/images/student-project/student-2.png',
         name: 'សួ លីឡាយ',
         nameEnglish: 'Suo Lylay',
         id: '០០០០១',
@@ -128,7 +128,7 @@ const groupProfile = [
         university: 'មេគង្គកម្ពុជា',
     },
     {
-        avatarImage: '/src/assets/images/student-project/student-3.png',
+        avatarImage: '/images/student-project/student-3.png',
         name: 'ចាន់ សីហា',
         nameEnglish: 'Chan Seyha',
         id: '១២៣១',
@@ -136,7 +136,7 @@ const groupProfile = [
         university: 'តិចណូ',
     },
     {
-        avatarImage: '/src/assets/images/student-project/student-4.png',
+        avatarImage: '/images/student-project/student-4.png',
         name: 'ចាន់ សីហា',
         nameEnglish: 'Chan Seyha',
         id: '១២៣១',

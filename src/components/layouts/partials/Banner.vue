@@ -29,7 +29,7 @@ defineProps({
   },
   imgSrc: {
     type: String,
-    default: '/src/assets/images/new-opening-course/course-banner.png',
+    default: '/images/new-opening-course/course-banner.png',
   },
 });
 </script>

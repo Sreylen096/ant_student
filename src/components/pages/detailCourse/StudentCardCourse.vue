@@ -53,28 +53,28 @@ defineProps({
 
 const cards = [
     {
-        image: '/src/assets/images/detail-course/stu-1.png',
+        image: '/images/detail-course/stu-1.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "CSS3 ",
         creator: "សេង សំណាង",
         deadline: "Oct 15, 2024",
     },
     {
-        image: '/src/assets/images/detail-course/stu-2.png',
+        image: '/images/detail-course/stu-2.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "C++ OOP",
         creator: "សេង សំណាង",
         deadline: "Oct 15, 2024",
     },
     {
-        image: '/src/assets/images/detail-course/stu-3.png',
+        image: '/images/detail-course/stu-3.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "HTML",
         creator: "តូច សុវណ្ណចាន់សំណាង",
         deadline: "Oct 15, 2024",
     },
     {
-        image: '/src/assets/images/detail-course/stu-4.png',
+        image: '/images/detail-course/stu-4.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "HTML",
         creator: "តូច សុវណ្ណចាន់សំណាង",

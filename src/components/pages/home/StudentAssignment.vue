@@ -33,25 +33,25 @@
 <script setup>
 const cards = [
     {
-        image: '/src/assets/images/homepage/web.png',
+        image: '/images/homepage/web.png',
         title: 'Web Development',
         alt: 'Web Development',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា HTML, CSS, JS, PHP...',
     },
     {
-        image: '/src/assets/images/homepage/mobile.png',
+        image: '/images/homepage/mobile.png',
         title: 'Mobile Application',
         alt: 'Mobile Application',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Flutter Lv1, Flutter Lv2...',
     },
     {
-        image: '/src/assets/images/homepage/software.png',
+        image: '/images/homepage/software.png',
         title: 'Software Application',
         alt: 'Software Application',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា C++, C++OOP, C#...',
     },
     {
-        image: '/src/assets/images/homepage/graphic.png',
+        image: '/images/homepage/graphic.png',
         title: 'Graphic Designer',
         alt: 'Graphic Designer',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Adobe photoshop',

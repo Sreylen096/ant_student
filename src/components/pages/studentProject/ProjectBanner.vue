@@ -10,7 +10,7 @@
         </div>
         <div class="col-12 col-md-4 text-md-end text-center">
           <img
-            src="/src/assets/images/student-project/project-banner.png"
+            src="/images/student-project/project-banner.png"
             alt=""
             class="img-fluid w-100"
           />

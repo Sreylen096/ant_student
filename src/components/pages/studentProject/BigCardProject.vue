@@ -29,7 +29,7 @@ import BigCard from './BigCard.vue'
 const cards = [
     {
         id: 1,
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "គ្រប់គ្រងស្ដុកម៉ាត",
         creator: "សេង សំណាង",
@@ -39,7 +39,7 @@ const cards = [
     },
     {
         id: 2,
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "គ្រប់គ្រងស្ដុកម៉ាត",
         creator: "សេង សំណាង",
@@ -49,7 +49,7 @@ const cards = [
     },
     {
         id: 3,
-        image: '/src/assets/images/student-project/student.png',
+        image: '/images/student-project/student.png',
         title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
         subject: "គ្រប់គ្រងស្ដុកម៉ាត",
         creator: "សេង សំណាង",

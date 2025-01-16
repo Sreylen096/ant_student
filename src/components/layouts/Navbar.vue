@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg shadow-none px-0 py-3 py-sm-4 py-md-2">
 
       <a class="navbar-brand" href="#">
-        <img src="/src/assets/images/homepage/ANTlogo 1.png" alt="" />
+        <img src="/images/homepage/ANTlogo 1.png" alt="" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
@@ -37,7 +37,7 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img src="/src/assets/images/homepage/ANTlogo 1.png" alt="" />
+            <img src="/images/homepage/ANTlogo 1.png" alt="" />
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>

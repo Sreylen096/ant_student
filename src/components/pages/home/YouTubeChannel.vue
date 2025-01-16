@@ -8,7 +8,7 @@
                             តាមដានស្នាដៃសិស្សលើ Channel Youtube
                         </p>
                         <span class="ms-0 ms-md-2 mt-1 mt-md-0 text-center">
-                            <img src="/src/assets/images/homepage/youtube.png" alt="youtube" class="img-fluid"
+                            <img src="/images/homepage/youtube.png" alt="youtube" class="img-fluid"
                                 style="max-width: 30px;">
                         </span>
                     </div>

@@ -10,7 +10,7 @@
                     </button>
                 </div>
                 <div class="col-12 col-md-5 d-flex align-items-center">
-                    <img src="/src/assets/images/student-project/youtube-channel.png" alt="" class="img-fluid w-100">
+                    <img src="/images/student-project/youtube-channel.png" alt="" class="img-fluid w-100">
                 </div>
             </div>
         </div>
