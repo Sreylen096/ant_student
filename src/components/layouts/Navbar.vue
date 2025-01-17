@@ -58,7 +58,7 @@
           </ul>
           <div class="mt-0">
             <form class="d-flex mt">
-              <button class="btn btn-primary ms-md-3 rounded-5 mt-4 mt-md-0" type="button" @click="redirectToTelegram">
+              <button class="btn btn-primary rounded-5 mt-4 mt-lg-0 ms-md-0 ms-lg-3 " type="button" @click="redirectToTelegram">
                 <i class="bi bi-telegram me-2"></i>Join Telegram
               </button>
             </form>
