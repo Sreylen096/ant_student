@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-6 col-cus col-lg-3 mt-lg-0 mt-4">
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-lg-0 mt-4">
     <div class="card border-0 rounded-4 shadow-none">
       <div>
         <img :src="card.image" class="card-img-top p-3 img-fluid" :alt="card.title" />
