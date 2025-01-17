@@ -2,7 +2,7 @@
     <section>
             <div class="container mx-auto px-md-0">
                 <div class="row">
-                    <div class="col-12 col-md-6 d-flex justify-content-start">
+                    <div class="col-12 col-lg-6 d-flex justify-content-start">
                         <div class="mt-md-5 ">
                             <p class="bg-primary-100 py-1 px-3 rounded-5 d-inline-flex">Ant Technology Training Center
                             </p>
@@ -19,7 +19,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-end">
+                    <div class="col-12 col-lg-6 d-flex justify-content-end justify-content-md-center">
                         <img src="/images/homepage/herobanner-lina 1.png" alt="" class="mt-5 mt-md-0">
                     </div>
                 </div>

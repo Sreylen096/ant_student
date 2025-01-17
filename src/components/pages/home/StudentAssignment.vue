@@ -2,17 +2,17 @@
      <section>
             <div class="container mt-5 p-md-0">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
+                    <div class="col-12 ">
                         <p class="text-800 fw-bold fs-32 text-nowrap">ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សា</p>
-                        <p class="text-700 text-wrap ">
+                        <p class="text-700 text-wrap mb-4">
                             ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាធ្វើឡើងក្នុងគោលបំណងបង្ហាញ ពីចំណេះដឹងដែលសិស្សបាន
                             សិក្សារៀនសូត្រគន្លងមក
                         </p>
 
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-md-3 mt-4 mt-md-0" v-for="(card, index) in cards" :key="index">
+                            <div class="col-12 col-sm-6 col-lg-3 mb-4" v-for="(card, index) in cards" :key="index">
                                 <div class="card border-0 rounded-4 shadow-none">
                                     <div class="px-3 pt-3">
                                         <img :src="card.image" class="card-img-top img-fluid w-40" :alt="card.alt">
@@ -42,7 +42,7 @@ const cards = [
         image: '/images/homepage/mobile.png',
         title: 'Mobile Application',
         alt: 'Mobile Application',
-        schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Flutter Lv1, Flutter Lv2...',
+        schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Flutter Lv1, Flutter...',
     },
     {
         image: '/images/homepage/software.png',

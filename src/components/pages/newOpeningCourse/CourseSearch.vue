@@ -1,7 +1,7 @@
 <template>
     <section>
-            <div class="container bg-white rounded-4 ">
-                <div class="row p-0">
+            <div class="container bg-white rounded-4">
+                <div class="row p-md-0">
                     <div class="col-12 p-4">
                         <div class="d-flex align-items-center">
                             <div class="bg-primary-500 text-white rounded-circle d-flex align-items-center justify-content-center"
@@ -16,7 +16,7 @@
                                 កំណត់ការបង្ហាញវគ្គសិក្សាជួយឲ្យអ្នកអាចស្វែងរកវគ្គសិក្សាដែលអ្នកចង់រកបានយ៉ាងឆាប់រហ័ស</p>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="position-relative d-flex justify-content-between">
                                     <input type="text"
                                         class="form-control bg-body border-0 shadow-none fs-14 py-3 rounded-5"
@@ -28,7 +28,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-12 col-md-3 mt-3 mt-md-0">
+                            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-md-0">
                                 <div class="d-flex align-items-center position-relative">
                                     <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5"
                                         id="exampleDropdown" style="padding-right: 50px; height: 40px;">
@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3 mt-3 mt-md-0">
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                                 <div class="d-flex align-items-center position-relative">
                                     <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5"
                                         id="exampleDropdown" style="padding-right: 50px; height: 40px;">
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3 mt-3 mt-md-0">
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
                                 <div class="d-flex align-items-center position-relative">
                                     <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5"
                                         id="exampleDropdown" style="padding-right: 50px; height: 40px;">
@@ -77,7 +77,7 @@
                         <div class="row mt-4">
                             <div class="d-flex align-items-center ">
                                     <button type="button" class="btn btn-cus-primary rounded-5 ">បង្ហាញវគ្គសិក្សា<i class="bi bi-chevron-right ms-1"></i></button>
-                                    <button type="button" class="btn btn-cus-primary rounded-5 ms-md-4 ">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
+                                    <button type="button" class="btn btn-cus-primary rounded-5 ms-md-4 ms-3">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
                                 </div>
                         </div>
                     </div>

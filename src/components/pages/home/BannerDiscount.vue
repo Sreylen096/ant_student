@@ -27,12 +27,8 @@
 
                             </button>
                         </div>
-                        <!-- <div class="position-absolute top-0 end-0"
-                                style="top: 40px!important; right: 70px!important;">
-                                <img src="/src/assets/images/homepage/macro.png" alt="macro" class="img-fluid">
-                            </div> -->
                         <div class="position-absolute top-0 end-0 responsive-position">
-                            <img src="/images/homepage/macro.png" alt="macro" class="img-fluid">
+                            <img src="/images/homepage/macro.png" alt="macro" class="img-fluid" style="top: 40px!important; right: 70px!important;">
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
@@ -55,7 +51,7 @@
 @media (max-width: 768px) {
   .responsive-position {
     top: 20px; 
-    right: 20px; 
+    right: 40px; 
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-lg-0 mt-4">
+  <div class="col-12 col-sm-6 col-cus col-lg-3 mt-lg-0 mt-4">
     <div class="card border-0 rounded-4 shadow-none">
       <div>
         <img :src="card.image" class="card-img-top p-3 img-fluid" :alt="card.title" />
@@ -23,13 +23,13 @@
             {{ card.time }}
           </p>
         </div>
-        <p class="card-text mb-3">{{ card.startDate }}</p>
+        <p class="card-text mb-3 mt-1">{{ card.startDate }}</p>
       </div>
       <div class="card-body py-0 my-0">
         <hr class="mt-0" />
         <div class="d-flex justify-content-between">
           <p class="text-700 fw-semibold fs-24 text-error">{{ card.price }}</p>
-          <span><a :href="telegramLink" class="btn btn-primary ms-3 rounded-5 border-0" target="_blank">
+          <span><a :href="telegramLink" class="btn btn-primary rounded-5 border-0" target="_blank">
               <i class="bi bi-telegram me-2"></i>{{ buttonText }}
             </a></span>
         </div>
@@ -54,3 +54,5 @@ defineProps({
   },
 });
 </script>
+
+

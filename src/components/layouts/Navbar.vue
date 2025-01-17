@@ -4,7 +4,7 @@
     <div class="top-navbar">
       <div class="container p-md-0 ">
         <div class="row py-2">
-          <div class="col-12 col-sm-12 col-md-6 d-sm-flex justify-content-sm-start text-1000 fs-14">
+          <div class="col-12 col-sm-12 col-lg-6 d-sm-flex justify-content-sm-start text-1000 fs-14">
             <p class="mb-0">
               <i class="bi bi-envelope-fill me-2"></i>anttrainingcenter@gmail.com
             </p>
@@ -12,7 +12,7 @@
               <i class="bi bi-telephone-fill me-2"></i>+855 10 666 653
             </p>
           </div>
-          <div class="col-12 col-md-6 text-md-end text-1000">
+          <div class="col-12 col-sm-12 col-lg-6 text-md-end text-1000 d-sm-flex justify-content-md-start justify-content-lg-end">
             <p class="mb-0 fs-14">
               <i class="bi bi-geo-alt-fill me-2"></i>ផ្ទះលេខ៤២, ផ្លូវ៦០៦,
               សង្កាត់បឹងកក់ទី១, ខណ្ឌទួលគោក, ភ្នំពេញ

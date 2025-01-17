@@ -1,8 +1,8 @@
 <template>
     <section>
-        <div class="container px-0">
+        <div class="container p-0">
             <div class="row align-items-center">
-                <div class="col-12 col-md-10 mb-3 mb-md-0 px-3">
+                <div class="col-12 col-md-9 mb-3 mb-md-0">
                     <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
                         <p class="text-800 fs-24 fs-md-32 fw-semibold text-center text-md-start mb-2 mb-md-0">
                             តាមដានស្នាដៃសិស្សលើ Channel Youtube
@@ -14,10 +14,10 @@
                     </div>
                     <p class="text-700 fs-14 fs-md-16 text-center text-md-start">
                         ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដែលបានធ្វើឡើងជាលក្ខណៈ
-                        វីឌីអូសម្រាប់សិស្សានុសិស្សអាចទស្សនាស្នាដៃរបស់ពួកគេឬស្នាដៃសិស្សផ្សេងៗទៀត
+                        វីដេអូសម្រាប់សិស្សានុសិស្សអាចទស្សនាស្នាដៃរបស់ពួកគេឬស្នាដៃសិស្សផ្សេងៗទៀត
                     </p>
                 </div>
-                <div class="col-5 col-md-2 d-flex justify-content-end align-items-center mx-auto">
+                <div class="col-5 col-md-3 d-flex justify-content-end align-items-center mx-auto">
                     <button class="btn btn-primary rounded-5 w-100 w-md-auto" type="button">
                         មើលឥឡូវនេះ
                         <svg class="ms-1" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
@@ -35,3 +35,4 @@
         </div>
     </section>
 </template>
+
