@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-cus col-lg-6 col-xl-3 mt-4 mt-lg-3 mt-xl-0">
+                            <div class="col-12 col-lg-6 col-xl-3 mt-4 mt-lg-3 mt-xl-0">
                                 <div class="d-flex align-items-center ">
                                     <button type="button" class="btn btn-cus-primary rounded-5">បង្ហាញវគ្គសិក្សា<i class="bi bi-chevron-right ms-1"></i></button>
                                     <button type="button" class="btn btn-cus-primary rounded-5 ms-md-4 ms-3">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
