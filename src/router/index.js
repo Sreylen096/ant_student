@@ -34,7 +34,10 @@ const router = createRouter({
       component: StudentProjectDetailView
     },
    
-  ]
+  ], 
+  scrollBehavior() {
+    return { top: 0 };
+  }
 })
 
 export default router
