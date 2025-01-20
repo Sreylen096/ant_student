@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-lg-0 mt-4">
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-lg-0 mt-4">
     <a href="">
       <div class="card border-0 rounded-4 shadow-none">
         <div>

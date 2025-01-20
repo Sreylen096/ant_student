@@ -4,7 +4,7 @@
             <div class="col-12 col-md-8">
                 <div>
                     <p class="fs-16 fw-semibold text-800 mt-2 mb-0">{{ title }}</p>
-                    <div class=" d-flex mt-2">
+                    <div class=" d-xl-flex mt-2">
                         <p class="text-400 mb-0 fs-14">
                             <svg class="me-1" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
                                 </g>
                             </svg>{{ creator }}
                         </p>
-                        <p class="text-400 ms-3 mb-0 fs-12">
+                        <p class="text-400 ms-xl-3 mb-0 fs-12 mt-lg-2 mt-xl-0">
                             <svg class="me-1" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -47,7 +47,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
+            <div class="col-12 col-md-4 d-flex align-items-center py-2 ">
                 <img :src="image" alt="" class="img-fluid w-100">
             </div>
 

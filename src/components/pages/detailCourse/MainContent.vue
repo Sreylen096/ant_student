@@ -1,15 +1,20 @@
 <template>
-    <div class="bg-white rounded-4">
+    <div class="bg-white rounded-4 me-2 me-md-0">
         <div class="p-4">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between">
-                        <p class="text-800 fs-20 fw-semibold">វគ្គសិក្សា HTML / HTML5 + CSS</p>
-                        <form class="d-flex mt">
-                            <button class="btn btn-primary ms-3 rounded-5 fs-16" type="button" @click="redirectToTelegram">
-                                <i class="bi bi-telegram me-2"></i>ទំនាក់ទំនងចុះឈ្មោះសិក្សា
-                            </button>
-                        </form>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <p class="text-800 fs-20 fw-semibold mb-md-0">វគ្គសិក្សា HTML / HTML5 + CSS</p>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-lg-end mb-3 mt-lg-0 mt-md-3">
+                            <form>
+                                <button class="btn btn-primary rounded-5 fs-16" type="button"
+                                    @click="redirectToTelegram">
+                                    <i class="bi bi-telegram me-2"></i>ទំនាក់ទំនងចុះឈ្មោះសិក្សា
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <p class="text-800 fs-18 fw-medium mb-2">តម្លៃ៖​ 60$</p>
                     <p class="text-800 fs-18 fw-medium mb-2">​សិក្សារយៈពេល ៖ ៥០ម៉ោង</p>
@@ -115,7 +120,7 @@
 const telegramLink = 'https://t.me/AntTechnologyTrainingCenter';
 
 const redirectToTelegram = () => {
-  window.open(telegramLink, '_blank');
+    window.open(telegramLink, '_blank');
 };
 
 

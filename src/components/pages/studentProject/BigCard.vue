@@ -1,7 +1,7 @@
 <template>
   <RouterLink :to="`/DetailPage/StudentProjectDetail/${id}`">
     <div class="row border-cus rounded-3 mx-0 mb-4">
-      <div class="col-12 col-md-5 p-3">
+      <div class="col-12 col-md-5 px-3 d-flex align-items-center">
         <img :src="image" alt="" class="img-fluid w-100" />
       </div>
       <div class="col-12 col-md-7 py-3">

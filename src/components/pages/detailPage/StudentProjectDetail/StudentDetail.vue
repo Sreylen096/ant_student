@@ -1,5 +1,5 @@
 <template>
-    <div class="container p-0">
+    <div class="container p-md-0">
         <div class="col-12">
             <div class="card border-0 mb-4 position-relative z-index-9 shadow-none rounded-4">
                 <Banner title="ថ្នាក់បើកថ្មី" description="នេះជាទំព័រថ្នាក់បើកថ្មីដែលមាននៅថ្នាក់បណ្ដុះបណ្ដាលអានយើង"
@@ -11,9 +11,8 @@
                     <StudentProfileGroup v-for="(profile, index) in groupProfile" :key="index"
                         :avatar-image="profile.avatarImage" :name="profile.name" :nameEnglish="profile.nameEnglish"
                         :id="profile.id" :year="profile.year" :university="profile.university"
-                        class="col-12 col-md-4" />
+                        class="col-12 col-lg-6 col-xl-4" />
                 </div>
-
             </div>
         </div>
         <div class="bg-white p-4 rounded-4 mb-5">
@@ -24,10 +23,10 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="html-tab" role="tabpanel">
                         <div class="row">
-                            <div class="col-12 col-md-6">
-                                <img src="/images/student-project/assignment.png" alt="" class="img-fluid">
+                            <div class="col-12 col-lg-6">
+                                <img src="/images/student-project/assignment.png" alt="" class="img-fluid h-100 rounded-5">
                             </div>
-                            <div class="col-12 col-md-6 p-0 mt-4">
+                            <div class="col-12 col-lg-6 p-0 mt-xl-3 ps-lg-4 ps-xl-0">
                                 <div class="pt-4 m-0">
                                     <div class="mb-4">
                                         <p class="text-800 fw-medium mb-0">Website Design HTML5 + CSS
@@ -72,7 +71,7 @@
                                         </div>
                                     </div>
                                     <div class="row mt-5">
-                                        <div class="col-12 col-md-5">
+                                        <div class="col-12 col-md-6 mx-md-auto ms-lg-0 me-lg-0">
                                             <button class="btn btn-primary w-100 rounded-5" type="submit">
                                                 ចុចទីនេះដើម្បីមើលជាក់ស្ដែង<i class="bi bi-chevron-right ms-2"></i>
                                             </button>
@@ -81,7 +80,6 @@
 
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="tab-pane fade" id="link-tab" role="tabpanel">

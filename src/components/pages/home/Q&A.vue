@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="/images/homepage/herobanner-ny.png" class="img-fluid" alt="herobanner-ny">
+                        <img src="/images/homepage/herobanner-ny.png" class="img-fluid w-100" alt="herobanner-ny">
                     </div>
                 </div>
             </div>

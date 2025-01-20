@@ -16,7 +16,7 @@
                                 កំណត់ការបង្ហាញវគ្គសិក្សាជួយឲ្យអ្នកអាចស្វែងរកវគ្គសិក្សាដែលអ្នកចង់រកបានយ៉ាងឆាប់រហ័ស</p>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="col-12 col-sm-6 col-lg-3">  
                                 <div class="position-relative d-flex justify-content-between">
                                     <input type="text"
                                         class="form-control bg-body border-0 shadow-none fs-14 py-3 rounded-5"

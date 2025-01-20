@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white rounded-4 mb-5">
+    <div class="bg-white rounded-4 mb-5 me-2 me-md-0">
         <div class="p-4">
             <p class="fs-20 text-800 fw-semibold">វគ្គសិក្សានៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន</p>
             <div class="row">

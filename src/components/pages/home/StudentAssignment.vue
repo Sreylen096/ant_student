@@ -13,7 +13,8 @@
                     <div class="col-12 col-xl-8">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-3 mb-4" v-for="(card, index) in cards" :key="index">
-                                <div class="card border-0 rounded-4 shadow-none">
+                                <a href="#" >
+                                    <div class="card border-0 rounded-4 shadow-none">
                                     <div class="px-3 pt-3">
                                         <img :src="card.image" class="card-img-top img-fluid w-40" :alt="card.alt">
                                     </div>
@@ -22,6 +23,7 @@
                                         <p class="card-text text-700 fs-14">{{ card.schedule }}</p>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         </div>
                     </div>
