@@ -2,7 +2,7 @@
   <RouterLink :to="`/DetailPage/StudentProjectDetail/${id}`">
     <div class="row border-cus rounded-3 mx-0 mb-4">
       <div class="col-12 col-md-5 px-3 d-flex align-items-center">
-        <img :src="image" alt="" class="img-fluid w-100" />
+        <img :src="image" alt="" class="img-fluid w-100 mt-3 mt-md-0" />
       </div>
       <div class="col-12 col-md-7 py-3">
         <div>
