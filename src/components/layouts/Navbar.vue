@@ -1,6 +1,6 @@
 
 <template>
-  <div class="container-fluid border-top border-bottom bg-white p-0 sticky-top mb-0">
+  <div :class="['container-fluid', 'sticky-top', 'bg-white', 'p-0', 'border-bottom','mb-0', { 'hidden-navbar': !isNavbarVisible }]">
     <div class="top-navbar">
       <div class="container p-md-0 ">
         <div class="row py-2">
@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid sticky-top bg-white p-0">
+  <div :class="['container-fluid', 'sticky-top', 'bg-white', 'p-0', { 'hidden-navbar': !isNavbarVisible }]">
   <div class="container p-md-0 shadow-none">
     <nav class="navbar navbar-expand-lg shadow-none px-0 py-3 py-sm-4 py-md-2">
 
@@ -68,10 +68,31 @@
     </nav>
   </div>
 </div>
-
 </template>
 
 <script setup>
+import {ref, onMounted, onBeforeUnmount} from 'vue';
+
+const isNavbarVisible = ref(true);
+let lastScrollTop = 0;
+
+const handleScroll = () => {
+  const currentScroll = document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop && currentScroll > 100) {
+    isNavbarVisible.value = false;
+  } else {
+    isNavbarVisible.value = true;
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 
 const telegramLink = 'https://t.me/AntTechnologyTrainingCenter';
 
@@ -79,6 +100,12 @@ const redirectToTelegram = () => {
   window.open(telegramLink, '_blank');
 };
 
-
 </script>
-
+ 
+ <style scoped>
+ .hidden-navbar {
+   transform: translateY(-100%);
+   transition: transform 0.3s ease-in-out;
+ }
+ </style>
+ 
