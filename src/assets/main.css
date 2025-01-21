@@ -40,7 +40,7 @@ body{
     background-color: var(--bg-color);
     font-size: 16px;
     overflow: auto !important;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 
