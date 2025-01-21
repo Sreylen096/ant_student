@@ -1,6 +1,6 @@
 <template>
     <section>
-        <!-- <div class="container p-0">
+        <div class="container p-md-0">
             <div class="row align-items-center">
                 <div class="col-12 col-md-9 mb-3 mb-md-0">
                     <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
@@ -32,7 +32,7 @@
                 </div>
 
             </div>
-        </div> -->
+        </div>
     </section>
 </template>
 
