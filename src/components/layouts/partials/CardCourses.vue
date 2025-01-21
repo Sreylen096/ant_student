@@ -14,7 +14,7 @@
             </a>
           </div>
         </div>
-        <div class="row pe-0">
+        <div class="row p-0 ms-0">
           <Card
             v-for="(card, index) in cards"
             :key="index"
