@@ -39,8 +39,9 @@ body{
     font-family:  'Poppins','Kantumruy Pro';
     background-color: var(--bg-color);
     font-size: 16px;
-    overflow: auto !important;
-    padding-right: 0px!important;
+    /* overflow: auto !important; */
+    overflow-x: hidden;
+    
 }
 
 .custom-element {
