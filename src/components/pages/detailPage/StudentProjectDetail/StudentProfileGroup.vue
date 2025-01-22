@@ -63,9 +63,9 @@
                                 <hr class="my-2">
                             </div>
                             <div class="col-12">
-                                <div class="row d-flex justify-content-between align-items-center">
-                                    <div class="col-9 col-md-9">
-                                        <div class="d-flex align-items-center mb-0">
+                                <div class="row">
+                                    <div class="col-12 col-md-9">
+                                        <div class="d-flex align-items-center mb-0 justify-content-between">
                                             <p class="fs-12 text-400 me-2 mb-0 d-flex align-items-center">
                                                 <a href="#" class="nav-link"><svg width="13" height="14"
                                                         viewBox="0 0 11 12" fill="none"
@@ -102,7 +102,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-3 col-md-3 d-flex justify-content-end">
+                                    <div class="col-12 col-md-3 d-flex justify-content-md-end justify-content-start">
                                         <a href="#" class="nav-link mb-0 fs-12 text-primary-500">
                                             <i class="bi bi-eye me-1"></i>មើលបន្ថែម
                                         </a>

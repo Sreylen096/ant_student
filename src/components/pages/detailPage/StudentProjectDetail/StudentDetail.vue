@@ -26,7 +26,7 @@
                             <div class="col-12 col-lg-6">
                                 <img src="/images/student-project/assignment.png" alt="" class="img-fluid h-100 rounded-5">
                             </div>
-                            <div class="col-12 col-lg-6 p-0 mt-xl-3 ps-lg-4 ps-xl-0">
+                            <div class="col-12 col-lg-6 p-0 mt-xl-3 ps-4 ps-lg-4 ps-xl-0">
                                 <div class="pt-4 m-0">
                                     <div class="mb-4">
                                         <p class="text-800 fw-medium mb-0">Website Design HTML5 + CSS
