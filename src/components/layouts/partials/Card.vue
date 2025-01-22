@@ -2,7 +2,7 @@
   <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-lg-0 mt-4">
     <div class="card border-0 rounded-4 shadow-none">
       <div>
-        <img :src="card.image" class="card-img-top p-3 img-fluid" :alt="card.title" />
+        <img :src="card.image" class="card-img-top p-3 img-fluid rounded-5" :alt="card.title" />
       </div>
       <div class="card-body py-0">
         <h5 class="card-title text-800 fw-bold fs-18">{{ card.title }}</h5>

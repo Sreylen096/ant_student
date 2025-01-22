@@ -7,7 +7,7 @@
                         <div>
                             <p class="text-800 fw-bold fs-36">ទទួលបានការ​បញ្ចុះតម្លៃ ១០%</p>
                             <p class="text-800 fw-medium fs-20">
-                                សិស្សានុសិស្សនឹងទទួលបានរាល់ពេលដែរចុះឈ្មោះសិក្សាចាប់ពី ៣នាក់​ ឡើងទៅ </p>
+                                សិស្សានុសិស្សនឹងទទួលបានរាល់ពេលដែលចុះឈ្មោះសិក្សាចាប់ពី ៣នាក់​ ឡើងទៅ </p>
                             <button class="btn btn-primary rounded-5 mt-3 fs-16" type="submit">
                                 ទំនាក់ទំនងឥឡូវនេះ
                                 <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
