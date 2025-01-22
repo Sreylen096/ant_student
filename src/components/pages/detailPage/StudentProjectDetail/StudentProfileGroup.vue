@@ -102,7 +102,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-3 d-flex justify-content-md-end justify-content-start">
+                                    <div class="col-12 col-md-3 d-flex justify-content-end mt-1 mt-md-0">
                                         <a href="#" class="nav-link mb-0 fs-12 text-primary-500">
                                             <i class="bi bi-eye me-1"></i>មើលបន្ថែម
                                         </a>
