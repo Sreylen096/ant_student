@@ -59,10 +59,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-3">
                             <div class="d-flex align-items-center ">
                                     <button type="button" class="btn btn-cus-primary rounded-5 ">បង្ហាញវគ្គសិក្សា<i class="bi bi-chevron-right ms-1"></i></button>
-                                    <button type="button" class="btn btn-cus-primary rounded-5 ms-md-4 ">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
+                                    <button type="button" class="btn btn-cus-primary rounded-5 ms-4 ">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
                                 </div>
                         </div>
                     </div>
