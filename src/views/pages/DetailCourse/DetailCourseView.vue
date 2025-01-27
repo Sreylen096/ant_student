@@ -5,10 +5,10 @@
     <section>
         <div class="container p-0">
             <div class="row g-4 justify-content-between">
-                <div class="col-12 col-md-4 pe-0 pe-md-3">
+                <div class="col-12 col-md-5 col-lg-4 pe-0 pe-md-3">
                    <SideBarCourse />
                 </div>
-                <div class="col-12 col-md-8 pe-0 pe-md-3">
+                <div class="col-12 col-md-7 col-lg-8 pe-0 pe-md-3">
                     <MainContent />
                 </div>
             </div>
