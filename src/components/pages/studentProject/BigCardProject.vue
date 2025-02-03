@@ -9,53 +9,30 @@
       <div v-for="(card, index) in cards" :key="index">
         <BigCard
             :id="card.id"
-            :image="card.image"
-            :title="card.title"
-            :subject="card.subject"
-            :creator="card.creator"
-            :deadline="card.deadline"
-            :tag1="card.tag1"
-            :tag2="card.tag2"
-        />
+            :image="card.website_photo"  
+            :title="card.name"            
+            :subject="card.course.course_name"
+            :creator="card.student.full_name"       
+            :deadline="card.finished_at_format"  
+            :tag1="card.course.course_name" 
+          />
       </div>
     </div>
   </div>
     </section>
 </template> 
-
 <script setup>
-import BigCard from './BigCard.vue'
+import { ref, onMounted } from 'vue';
+import { useProjectStore } from '@/stores/pages/studentProject/project';
+import BigCard from './BigCard.vue';
 
-const cards = [
-    {
-        id: 1,
-        image: '/images/student-project/student.png',
-        title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
-        subject: "គ្រប់គ្រងស្ដុកម៉ាត",
-        creator: "សេង សំណាង",
-        deadline: "Oct 15, 2024",
-        tag1: "Javascript",
-        tag2: "Programming",
-    },
-    {
-        id: 2,
-        image: '/images/student-project/student.png',
-        title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
-        subject: "គ្រប់គ្រងស្ដុកម៉ាត",
-        creator: "សេង សំណាង",
-        deadline: "Oct 15, 2024",
-        tag1: "Javascript",
-        tag2: "Programming",
-    },
-    {
-        id: 3,
-        image: '/images/student-project/student.png',
-        title: "បង្កើតកម្មវិធី គ្រប់គ្រងស្ដុកម៉ាត",
-        subject: "គ្រប់គ្រងស្ដុកម៉ាត",
-        creator: "សេង សំណាង",
-        deadline: "Oct 15, 2024",
-        tag1: "Javascript",
-        tag2: "Programming",
-    }
-]
+const projectStore = useProjectStore();
+const cards = ref([]);
+
+onMounted(async () => {
+  await projectStore.getProject(); 
+  cards.value = projectStore.projects; 
+});
+
+
 </script>

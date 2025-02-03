@@ -13,7 +13,7 @@
                     <div class="col-12 col-xl-8">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-3 mb-4" v-for="(card, index) in cards" :key="index">
-                                <a href="#" >
+                                <a @click.prevent="toStudentProject(card.category_id)">
                                     <div class="card border-0 rounded-4 shadow-none">
                                     <div class="px-3 pt-3">
                                         <img :src="card.image" class="card-img-top img-fluid w-40" :alt="card.alt">
@@ -33,26 +33,34 @@
 </template>
 
 <script setup>
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 const cards = [
     {
+        category_id: 1,
         image: '/images/homepage/web.png',
         title: 'Web Development',
         alt: 'Web Development',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា HTML, CSS, JS, PHP...',
     },
     {
-        image: '/images/homepage/mobile.png',
-        title: 'Mobile Application',
-        alt: 'Mobile Application',
-        schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Flutter Lv1, Flutter...',
-    },
-    {
+        category_id: 2,
         image: '/images/homepage/software.png',
         title: 'Software Application',
         alt: 'Software Application',
         schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា C++, C++OOP, C#...',
     },
     {
+        category_id: 3,
+        image: '/images/homepage/mobile.png',
+        title: 'Mobile Application',
+        alt: 'Mobile Application',
+        schedule: 'ស្នាដៃសិស្សបញ្ចប់វគ្គសិក្សាដូចជា Flutter Lv1, Flutter...',
+    }, 
+    {
+        category_id: 4,
         image: '/images/homepage/graphic.png',
         title: 'Graphic Designer',
         alt: 'Graphic Designer',
@@ -60,5 +68,9 @@ const cards = [
     }
 
 ]
+
+const toStudentProject = (category_id) => {
+  router.push({ name: "StudentProjectView", query: { category_id } });
+};
 
 </script>

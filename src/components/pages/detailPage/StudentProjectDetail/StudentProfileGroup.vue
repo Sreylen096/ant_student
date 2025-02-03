@@ -1,6 +1,6 @@
 <template>
     <div class="container p-0">
-        <div class="card-body py-4 px-5">
+        <div class="card-body py-4">
             <div class="row d-flex justify-content-between">
                 <div class="col-12 mt-4 mt-md-0">
                     <div class="p-c-2 border-cus rounded-3 px-3">
@@ -31,7 +31,7 @@
                                                 <path d="M2.55469 10.2917C4.71924 7.71036 7.2618 8.5217 8.77691 10.2917"
                                                     stroke="#726C6C" stroke-linecap="round" />
                                             </svg>
-                                            {{ id }}
+                                            {{ student_id }}
                                         </p>
                                         <p class="text-600 fs-14">
                                             <svg class="me-1" width="16" height="14" viewBox="0 0 16 16" fill="none"
@@ -67,7 +67,7 @@
                                     <div class="col-12 col-md-9">
                                         <div class="d-flex align-items-center mb-0 justify-content-between">
                                             <p class="fs-12 text-400 me-2 mb-0 d-flex align-items-center">
-                                                <a href="#" class="nav-link"><svg width="13" height="14"
+                                                <a :href="fb_name" class="nav-link"><svg width="13" height="14"
                                                         viewBox="0 0 11 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -77,7 +77,7 @@
                                                     Facebook</a>
                                             </p>
                                             <p class="fs-12 text-400 me-2 mb-0 d-flex align-items-center">
-                                                <a href="#" class="nav-link"><svg width="13" height="14"
+                                                <a :href="telegram" class="nav-link"><svg width="13" height="14"
                                                         viewBox="0 0 11 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -132,7 +132,7 @@ defineProps({
         type: String,
         required: true,
     },
-    id: {
+    student_id: {
         type: String,
         required: true,
     },
@@ -143,6 +143,16 @@ defineProps({
     university: {
         type: String,
         required: true,
+    },
+    fb_name: {
+        type: String,
+        required: true,
+        default: '',
+    },
+    telegram: {
+        type: String,
+        required: true,
+        default: '',
     },
 });
 </script>

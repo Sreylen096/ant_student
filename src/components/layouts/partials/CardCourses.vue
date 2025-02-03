@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="container px-md-0">
-      <div class="row " style="margin-top: -40px;">
+    <div class="container px-md-0 ">
+      <div class="row" style="margin-top: -40px;">
         <div class="col-12" v-if="showHeader">
           <div class="d-flex justify-content-between">
             <p class="text-800 fs-32 fw-semibold">{{ title }}</p>
@@ -16,12 +16,12 @@
         </div>
         <div class="row p-0 ms-0">
           <Card
-            v-for="(card, index) in cards"
-            :key="index"
-            :card="card"
-            buttonText="ព័ត៌មានបន្ថែម"
-            class="mb-lg-4"
-          />
+              v-for="(card, index) in cards"
+              :key="index"
+              :card="card"
+              buttonText="ព័ត៌មានបន្ថែម"
+              class="mb-lg-4"
+            />
         </div>
       </div>
     </div>
@@ -30,6 +30,7 @@
 
 <script setup>
 import Card from "./Card.vue";
+
 
 defineProps({
   showHeader: {
@@ -56,6 +57,8 @@ defineProps({
     type: Array,
     required: true,
   },
+
 });
+
 
 </script>

@@ -1,3 +1,5 @@
+
+
 <template>
     <div class="bg-white rounded-4 me-2 me-md-0">
         <div class="p-4">
@@ -5,7 +7,7 @@
                 <div class="col-12">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <p class="text-800 fs-20 fw-semibold mb-md-0">វគ្គសិក្សា HTML / HTML5 + CSS</p>
+                            <p class="text-800 fs-20 fw-semibold mb-md-0">វគ្គសិក្សា {{ classroomStore.classroom_detail.class_name }}</p>
                         </div>
                         <div class="col-12 col-lg-6 d-flex justify-content-lg-end mb-3 mt-lg-0 mt-md-3">
                             <form>
@@ -16,112 +18,81 @@
                             </form>
                         </div>
                     </div>
-                    <p class="text-800 fs-18 fw-medium mb-2">តម្លៃ៖​ 60$</p>
-                    <p class="text-800 fs-18 fw-medium mb-2">​សិក្សារយៈពេល ៖ ៥០ម៉ោង</p>
-                    <p class="text-800 fs-18 fw-medium mb-2">សិក្សាពីថ្ងៃ ចន្ទ​ ដល់ សុក្រ​ ម៉ោង​ ១១:០០-១២:២០ព្រឹក</p>
-                    <p class="text-800 fs-16 text-justify ">នេះជា​វគ្គ ​HTML (Hyper Text Markup
-                        Language) ​ដែល​បាន​បង្កើត​ឡើង​សម្រាប់​អ្នក​ដែល​ចង់​សិក្សា​អំពី​កា​បង្កើត​វែបសាយ
-                        ។HTML ជាគ្រឹះដ៏​សំខាន់ និង​មិនអាច​ខ្វះបាន​សម្រាប់​ការឈានទៅ​សិក្សា CSS3,
-                        Bootstrap, JavaScript, PHP, ASP.NET ។ល។
-                        ​វគ្គ​នេះ​លោកអ្នក​មិនត្រឹមតែ​សិក្សា​ពី HTML ប៉ុណ្ណោះទេ
-                        លោកអ្នក​នឹង​សិក្សា​ពីការ​ប្រើ​ប្រាស់ Visual Studio Code និង
-                        មុខងារថ្មីៗ​ដែល​មាន​ក្នុង HTML5 ថែម​ទៀតផង ។</p>
-
+                 
+                    <p v-if="classroomStore.classroom_detail && classroomStore.classroom_detail.course" 
+                        class="text-800 fs-18 fw-medium mb-2">
+                        តម្លៃ៖​ {{ classroomStore.classroom_detail.course.price }}$
+                    </p>
+                    <p v-else class="text-800 fs-18 fw-medium mb-2">Loading price...</p>
+                    <p v-if="classroomStore.classroom_detail && classroomStore.classroom_detail.course" 
+                       class="text-800 fs-18 fw-medium mb-2">
+                       ​សិក្សារយៈពេល ៖ {{ classroomStore.classroom_detail.course.total_time }} ម៉ោង
+                    </p>
+                    <p v-if="classroomStore.classroom_detail && classroomStore.classroom_detail.course" 
+                       class="text-800 fs-18 fw-medium mb-2">
+                       សិក្សាពីថ្ងៃ {{ classroomStore.classroom_detail.course.study_start_day }} 
+                       ដល់ {{ classroomStore.classroom_detail.course.study_end_day }} 
+                    </p>
+                    <p v-if="classroomStore.classroom_detail && classroomStore.classroom_detail.course" 
+                       class="text-800 fs-18 fw-medium mb-2">
+                       ម៉ោង​ {{ classroomStore.classroom_detail.course.study_times }}
+                    </p>
+                    <p v-if="classroomStore.classroom_detail && classroomStore.classroom_detail.course" 
+                       class="text-800 fs-16 text-justify">
+                       {{ classroomStore.classroom_detail.course.overview }}
+                    </p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12">
                     <p class="text-800 fs-20 fw-semibold mt-2 mb-0">គ្រោងនៃការសិក្សា</p>
-                    <div class="accordion">
+                    <div class="accordion" v-for="outline in classroomStore.course_outline.outlines" :key="outline">
                         <div class="accordion-item">
+                            
                             <p class="accordion-header">
                                 <button class="accordion-button text-700 fs-18 fw-medium" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    តើមានថ្នាក់បើកថ្មីវេនយប់ដែលឬទេ?
+                                    {{ outline.name }}
                                 </button>
                             </p>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-700">
-                                    ចំពោះវគ្គសិក្សាវេនរសៀល នៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT គឺមិនមាននោះទេ
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                                <button class="accordion-button collapsed text-700 fs-18 fw-medium" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    តើមានថ្នាក់បើកថ្មីថ្ងៃចុងសប្ដាហ៍ដែលឬទេ?
-                                </button>
-                            </p>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-700">
-                                    ចំពោះវគ្គសិក្សាវេនរសៀល នៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT គឺមិនមាននោះទេ
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                                <button class="accordion-button collapsed text-700 fs-18 fw-medium" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    តើមានថ្នាក់បើកថ្មីថ្ងៃចុងសប្ដាហ៍ដែលឬទេ?
-                                </button>
-                            </p>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-700">
-                                    ចំពោះវគ្គសិក្សាវេនរសៀល នៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT គឺមិនមាននោះទេ
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                                <button class="accordion-button collapsed text-700 fs-18 fw-medium" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    តើមានថ្នាក់បើកថ្មីថ្ងៃចុងសប្ដាហ៍ដែលឬទេ?
-                                </button>
-                            </p>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-700">
-                                    ចំពោះវគ្គសិក្សាវេនរសៀល នៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT គឺមិនមាននោះទេ
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                                <button class="accordion-button collapsed text-700 fs-18 fw-medium" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-                                    aria-controls="collapseFive">
-                                    តើមានថ្នាក់បើកថ្មីថ្ងៃចុងសប្ដាហ៍ដែលឬទេ?
-                                </button>
-                            </p>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-700">
-                                    ចំពោះវគ្គសិក្សាវេនរសៀល នៅថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT គឺមិនមាននោះទេ
+                                    {{ outline.description }}
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
 </template>
-
 <script setup>
+import { useClassroom } from "@/stores/pages/homepage/classroom";
+import { onMounted } from "vue";
+import { useRoute } from 'vue-router';
 
+const router = useRoute();
+const classroomStore = useClassroom();
+
+// Load classroom detail onMounted
+onMounted(async () => {
+   await classroomStore.loadClassroomDetail(router.params.id);
+    if(classroomStore.classroom_detail.course.course_outline){
+        await classroomStore.loadCourseOutlineDetail(classroomStore.classroom_detail.course.course_outline.id);
+    }else{
+        classroomStore.course_outline.outlines = [];
+    }
+    
+});
+  
 const telegramLink = 'https://t.me/AntTechnologyTrainingCenter';
-
 const redirectToTelegram = () => {
     window.open(telegramLink, '_blank');
 };
-
-
 </script>

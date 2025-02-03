@@ -18,7 +18,7 @@
                     </p>
                 </div>
                 <div class="col-5 col-md-3 d-flex justify-content-end align-items-center mx-auto">
-                    <button class="btn btn-primary rounded-5 w-100 w-md-auto" type="button">
+                    <button class="btn btn-primary rounded-5 w-100 w-md-auto" type="button" @click="redirectToYoutube">
                         មើលឥឡូវនេះ
                         <svg class="ms-1" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -30,9 +30,18 @@
                         </svg>
                     </button>
                 </div>
-
             </div>
         </div>
     </section>
 </template>
+
+<script setup>
+const youtubeLink = 'https://www.youtube.com/@ANTTechnologyTrainingCenter';
+
+const redirectToYoutube = () => {
+  window.open(youtubeLink, '_blank');
+};
+
+
+</script>
 

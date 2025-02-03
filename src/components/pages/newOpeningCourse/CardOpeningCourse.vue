@@ -1,249 +1,139 @@
 <template>
-    <CardCourse title="Web Development" :cards="webDevelopment"  />
-    <CardCourse title="Software Development" :cards="softwareDevelopment" />
-    <CardCourse title="Mobile Application" :cards="appApplication" />
-    <CardCourse title="Graphic Design" :cards="graphicDesign" />
+    <section>
+       
+            <div class="container bg-white rounded-4">
+                <div class="row p-md-0">
+                    <div class="col-12 p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary-500 text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 30px; height: 30px;">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <p class="fs-20 fw-semibold text-800 ms-3 mb-0">កំណត់ការបង្ហាញវគ្គសិក្សា</p>
+                        </div>
+
+                        <div class="mt-2">
+                            <p class="text-700">
+                                កំណត់ការបង្ហាញវគ្គសិក្សាជួយឲ្យអ្នកអាចស្វែងរកវគ្គសិក្សាដែលអ្នកចង់រកបានយ៉ាងឆាប់រហ័ស</p>
+                        </div>
+                        <div class="row">
+                            <form @submit.prevent="onSearchNewCourse()" class="row">
+                            <div class="col-12 col-sm-6 col-lg-3">  
+                                <div class="position-relative d-flex justify-content-between">
+                                    <input type="text"
+                                        class="form-control bg-body border-0 shadow-none fs-14 py-3 rounded-5"
+                                        id="exampleFormControlInput1" placeholder="ស្វែងរកវគ្គសិក្សា..." style="height: 40px;">
+                                    <div class="position-absolute top-50 end-0 translate-middle-y me-2 bg-white text-700 rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 24px; height: 24px;">
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-md-0">
+                                <div class="d-flex align-items-center position-relative">
+                                    <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5" style="padding-right: 50px; height: 40px;"  v-model="newCourseStore.filter_cate">
+                                            <option selected value="">មុខជំនាញ</option>
+                                            <option v-for="category in newCourseStore.categories" :key="category.id" :value="category.id" >
+                                            {{ category.name }}
+                                            </option>
+                                        </select>
+                                    <div class="position-absolute top-50 end-0 translate-middle-y me-2 bg-white text-700 rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 24px; height: 24px;">
+                                        <i class="bi bi-chevron-down fw-bolder"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                                <div class="d-flex align-items-center position-relative">
+                                    <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5"  v-model="newCourseStore.subject">
+                                            <option selected value="">មុខវិជ្ជា</option>
+                                            <option v-for="subject in subjectStore.getSubjects" :key="subject.id" :value="subject.id" >
+                                            {{ subject.name }}
+                                            </option>
+                                        </select>
+                                    <div class="position-absolute top-50 end-0 translate-middle-y me-2 bg-white text-700 rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 24px; height: 24px;">
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                                <div class="d-flex align-items-center position-relative">
+                                   
+                                    <select class="form-select bg-body border-0 shadow-none fs-14 text-700 rounded-5"  v-model="newCourseStore.start_time">
+                                            <option  value="">ម៉ោងសិក្សា</option>
+                                            <option  value="9:00">៩:០០​ - ១០:៣០</option>
+                                            <option  value="11:00">១១:០០​ - ១២:២០</option>
+                                            <option  value="13">១៣:៥០ - ១៥: ២០</option>
+                                            <option  value="15">១៥:៣០ - ១៧:០០</option>
+                                            
+                                        </select>
+                                    <div class="position-absolute top-50 end-0 translate-middle-y me-2 bg-white text-700 rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 24px; height: 24px;">
+                                        <i class="bi bi-chevron-down fw-bolder"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="d-flex align-items-center ">
+                                <button class="btn btn-cus-primary rounded-5" type="submit" @click="onSearchNewCourse()"
+                                            :disabled="newCourseStore.loading.search">
+                                            {{ newCourseStore.loading.search ? 'កំពុងបង្ហាញ...' :
+                                                'បង្ហាញវគ្គសិក្សា' }}<i class="bi bi-chevron-right ms-1"></i>
+                                        </button>
+                                        <button type="submit" class="btn btn-cus-primary rounded-5 ms-md-4 ms-3" @click="refreshData()">កំណត់ឡើងវិញ<i class="bi bi-arrow-clockwise ms-1"></i></button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+    <CardCourse 
+        v-for="(cards, title) in newCourseStore.newCourses" 
+        :key="title" 
+        :title="title" 
+        :cards="cards" 
+        />
 
 </template>
 
 <script setup>
+import {useSubjectStore} from '@/stores/pages/homepage/subject';
+import { useNewCourse } from "@/stores/pages/OpenNewCourse/newCourse";
 import CardCourse from '@/components/layouts/partials/CardCourses.vue';
+import { onMounted } from 'vue';
 
+const subjectStore = useSubjectStore();
+const newCourseStore = useNewCourse();
 
-const webDevelopment = [
-    {
-        image: "/images/homepage/html.png",
-        title: "HTML CSS",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
+onMounted(async () => {
+    await subjectStore.subjectsData();
+    await newCourseStore.loadCategory();
+    await newCourseStore.loadNewCourse();
 
-    },
-    {
-        image: "/images/homepage/css.png",
-        title: "CSS ",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/javascript.png",
-        title: "Javascript ",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/node.js.png",
-        title: "Node JS",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/javascript.png",
-        title: "Javascript ",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/node.js.png",
-        title: "Node JS",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/javascript.png",
-        title: "Javascript ",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-    {
-        image: "/images/homepage/node.js.png",
-        title: "Node JS",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "២:០០​-៣:២០ល្ងាច",
-        startDate: "ចូលរៀន ថ្ងៃទី១៨ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$70.00",
-    },
-]
+})
 
-const softwareDevelopment = [
-    {
-        image: "/images/new-opening-course/c++.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/oop.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/c++.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/oop.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    }, {
-        image: "/images/new-opening-course/c++.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/oop.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/c++.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/oop.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    }
-]
+const onSearchNewCourse = async () => {
+    await newCourseStore.loadNewCourse();
+  try {
+    newCourseStore.loading.search = true;
+    await newCourseStore.loadNewCourse();
+    newCourseStore.loading.search = false;
+    
+  } catch (error) {
+  }
+};
+const refreshData = async ()=>{
+    newCourseStore.subject = '';
+    newCourseStore.search = '';
+    newCourseStore.start_time = '';
+    newCourseStore.filter_cate = '';
+    await newCourseStore.loadNewCourse();
+}
 
-const appApplication = [
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/flutter-1.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    }
-]
-
-const graphicDesign = [
-    {
-        image: "/images/new-opening-course/design.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-
-    },
-    {
-        image: "/images/new-opening-course/design.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/design.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    },
-    {
-        image: "/images/new-opening-course/design.png",
-        title: "C++",
-        schedule: "ច័ន្ទ-សុក្រ",
-        time: "១១:០០​-១២:២០ព្រឹក",
-        startDate: "ចូលរៀន ថ្ងៃទី១៦ ខែកញ្ញា​ ឆ្នាំ២០២៤​",
-        price: "$60.00",
-    }
-]
 </script>
